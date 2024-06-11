@@ -17,8 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 connectDB();
 
 // Routes
-app.use('/api/auth', require("../Backend/Router/Auth"));
-app.use('/api/tickets', require("../Backend/Router/Ticketroutes"));
+app.use('/api/auth', require("./Router/Auth"));
+app.use('/api/tickets', require("./Router/Ticketroutes"));
 
 // Start the server
 const PORT = process.env.PORT || 8000;
